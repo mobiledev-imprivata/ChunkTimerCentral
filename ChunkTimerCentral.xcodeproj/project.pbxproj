@@ -13,6 +13,9 @@
 		D68491781B42CA7700B58659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68491771B42CA7700B58659 /* Images.xcassets */; };
 		D684917B1B42CA7700B58659 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68491791B42CA7700B58659 /* LaunchScreen.xib */; };
 		D68491871B42CA7700B58659 /* ChunkTimerCentralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491861B42CA7700B58659 /* ChunkTimerCentralTests.swift */; };
+		D68491C51B42CE9C00B58659 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491C41B42CE9C00B58659 /* Logger.swift */; };
+		D68491C71B42CEA800B58659 /* ChunkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491C61B42CEA800B58659 /* ChunkUtils.swift */; };
+		D68491C91B42CEB600B58659 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68491C81B42CEB600B58659 /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		D68491801B42CA7700B58659 /* ChunkTimerCentralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChunkTimerCentralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68491851B42CA7700B58659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68491861B42CA7700B58659 /* ChunkTimerCentralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkTimerCentralTests.swift; sourceTree = "<group>"; };
+		D68491C41B42CE9C00B58659 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D68491C61B42CEA800B58659 /* ChunkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkUtils.swift; sourceTree = "<group>"; };
+		D68491C81B42CEB600B58659 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		D684916D1B42CA7700B58659 /* ChunkTimerCentral */ = {
 			isa = PBXGroup;
 			children = (
+				D68491C41B42CE9C00B58659 /* Logger.swift */,
+				D68491C61B42CEA800B58659 /* ChunkUtils.swift */,
+				D68491C81B42CEB600B58659 /* BluetoothManager.swift */,
 				D68491701B42CA7700B58659 /* AppDelegate.swift */,
 				D68491721B42CA7700B58659 /* ViewController.swift */,
 				D68491741B42CA7700B58659 /* Main.storyboard */,
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68491731B42CA7700B58659 /* ViewController.swift in Sources */,
+				D68491C71B42CEA800B58659 /* ChunkUtils.swift in Sources */,
+				D68491C51B42CE9C00B58659 /* Logger.swift in Sources */,
 				D68491711B42CA7700B58659 /* AppDelegate.swift in Sources */,
+				D68491C91B42CEB600B58659 /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +355,7 @@
 				INFOPLIST_FILE = ChunkTimerCentral/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,6 +366,7 @@
 				INFOPLIST_FILE = ChunkTimerCentral/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -409,6 +423,7 @@
 				D684918C1B42CA7700B58659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D684918D1B42CA7700B58659 /* Build configuration list for PBXNativeTarget "ChunkTimerCentralTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +432,7 @@
 				D684918F1B42CA7700B58659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
