@@ -28,7 +28,7 @@ class BluetoothManager: NSObject {
     
     private let dechunker = Dechunker()
     
-    private let chunkSize = 19
+    private let chunkSize = 40
     private var nChunks = 0
     private var nChunksSent = 0
     private var startTime = NSDate()
@@ -135,7 +135,7 @@ extension BluetoothManager: CBCentralManagerDelegate {
         log("centralManagerDidUpdateState \(caseString)")
         isPoweredOn = (centralManager.state == .PoweredOn)
         if isPoweredOn {
-            go()
+            // go()
         }
     }
     
