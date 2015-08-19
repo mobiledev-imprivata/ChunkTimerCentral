@@ -28,7 +28,7 @@ class BluetoothManager: NSObject {
     
     private let dechunker = Dechunker()
     
-    private let chunkSize = 40
+    private let chunkSize = 19
     private var nChunks = 0
     private var nChunksSent = 0
     private var startTime = NSDate()
